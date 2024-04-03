@@ -9,7 +9,7 @@ Prefix = 512
 | Llama-2-13b  |   |   |   |   |
 | vicuna-33b-v1.3 |   |   |   |   |
 
-Prefix = 1024 
+Prefix = 2048 
 | Model / # GPUs | 1 | 2 | 4 | 8 |
 |---|---|---|---|---|
 | Sheared-LLaMA-2.7B  |   |   |   |   |
