@@ -1,18 +1,10 @@
 # FlexPiG
-
-## Performance on A100
-Prefix = 512 
+unit in ms, Prefix = 512, Batch size = 1
+## Performance on A100 80G PCIE
 | Model / # GPUs | 1 | 2 | 4 | 8 |
 |---|---|---|---|---|
-| Sheared-LLaMA-2.7B  |   |   |   |   |
-| Llama-2-7b  |   |   |   |   |
-| Llama-2-13b  |   |   |   |   |
-| vicuna-33b-v1.3 |   |   |   |   |
+| Sheared-LLaMA-2.7B  |  7.9 |   |   |  |
+| Llama-2-7b  | 12.7  |   |   |   |
+| Llama-2-13b  | 21.6 |   |   |   |
+| vicuna-33b-v1.3 | 49.0  |   |   |   |
 
-Prefix = 2048 
-| Model / # GPUs | 1 | 2 | 4 | 8 |
-|---|---|---|---|---|
-| Sheared-LLaMA-2.7B  |   |   |   |   |
-| Llama-2-7b  |   |   |   |   |
-| Llama-2-13b  |   |   |   |   |
-| vicuna-33b-v1.3 |   |   |   |   |
