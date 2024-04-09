@@ -1,4 +1,4 @@
-# FlexPiG
+# FlexSpec
 unit in ms, Prefix = 512, Batch size = 1
 ## Performance on A100 80G PCIE
 | Model / # GPUs | 1 | 2 | 4 | 8 |
