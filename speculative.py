@@ -29,9 +29,9 @@ def create_models(max_length):
     target = LLMEngine(max_length=MAX_LEN, model_name=TARGET_MODEL_NAME, device=DEVICE,dtype=DTYPE)
     draft_2= LLMEngine(max_length=MAX_LEN, model_name=MED_MODEL_NAME, device=DEVICE, dtype=DTYPE)
     draft_1= LLMEngine(max_length=MAX_LEN, model_name=TINY_MODEL_NAME, device=DEVICE, dtype=DTYPE)
-    target.initialize_cuda_graph(range(1,129))
-    draft_2.initialize_cuda_graph(range(1,129))
-    draft_1.initialize_cuda_graph(range(1,129))
+    target.initialize_cuda_graph([128,1,2,4,8,16])
+    draft_2.initialize_cuda_graph([128,1,2,4,8,16])
+    draft_1.initialize_cuda_graph([128,1,2,4,8,16])
 
     return target, draft_1, draft_2, tokenizer
 
