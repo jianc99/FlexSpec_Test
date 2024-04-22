@@ -1,3 +1,3 @@
-export CUDA_VISIBLE_DEVICES=2
+export CUDA_VISIBLE_DEVICES=3
 
 python autoregressive.py --M 512

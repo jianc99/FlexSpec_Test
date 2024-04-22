@@ -18,6 +18,13 @@ def _make_causal_mask(
     mask = mask.to(dtype)
     return mask
 
+
+# (68M => Tree => 1.3B) => gamma => 7b
+# 7b
+# 1.3B 7B
+# 68M 7B
+# 68M 7B tree
+
 def create_models(max_length):
     MAX_LEN = max_length
     MED_MODEL_NAME = "princeton-nlp/Sheared-LLaMA-1.3B"
